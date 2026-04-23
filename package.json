@@ -1,0 +1,17 @@
+{
+  "name": "ingest-state-fishkills",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "action": "bun run src/action.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@warmhub/sdk-ts": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}
