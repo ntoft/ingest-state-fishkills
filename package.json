@@ -4,12 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "action": "bun run src/action.ts",
+    "action": "bun dist/action.js",
+    "build": "bun build src/action.ts --target=bun --outfile=dist/action.js",
     "check": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@warmhub/sdk-ts": "latest",
-    "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
     "@types/bun": "latest",
