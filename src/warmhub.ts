@@ -13,3 +13,11 @@ export function homeRepo(): string {
   if (!repo) throw new Error("WARMHUB_REPO not set (sprite runtime should inject)");
   return repo;
 }
+
+export function splitRepo(repo: string): { orgName: string; repoName: string } {
+  const [orgName, repoName] = repo.split("/");
+  if (!orgName || !repoName) {
+    throw new Error(`Expected repo in "org/name" form, got ${JSON.stringify(repo)}`);
+  }
+  return { orgName, repoName };
+}
