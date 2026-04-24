@@ -3624,7 +3624,7 @@ var MDE_URL = "https://mde.maryland.gov/programs/water/FishandShellfish/Pages/md
 var MDE_ORIGIN = "https://mde.maryland.gov";
 var CURATED_REPO = "fish-kill-attribution/chesapeake-attribution";
 var CHESAPEAKE_WATERSHED = "Watershed/chesapeake-bay";
-var BBOX = { minLat: 36.8, maxLat: 39.7, minLon: -77.5, maxLon: -75.3 };
+var BBOX = { minLat: 33.5, maxLat: 39.7, minLon: -78, maxLon: -75 };
 async function discoverPdfUrls() {
   const res = await fetch(MDE_URL, { headers: { "User-Agent": "fish-kill-attribution-sprite/0.1" } });
   if (!res.ok)
